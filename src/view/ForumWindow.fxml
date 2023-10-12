@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxControllers.ForumWindow">
+   <children>
+      <ListView fx:id="commentList" layoutX="257.0" layoutY="35.0" onMouseClicked="#selectComment" prefHeight="133.0" prefWidth="322.0" />
+      <ListView fx:id="replyList" layoutX="263.0" layoutY="225.0" prefHeight="122.0" prefWidth="322.0" />
+      <Button layoutX="143.0" layoutY="348.0" mnemonicParsing="false" onAction="#newForum" text="New Forum" />
+      <TextField fx:id="titleField" layoutX="21.0" layoutY="347.0" prefHeight="26.0" prefWidth="118.0" promptText="title" />
+      <TextField fx:id="commentField" layoutX="257.0" layoutY="187.0" prefHeight="26.0" prefWidth="176.0" promptText="Comment" />
+      <Button layoutX="-60.0" layoutY="2.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="433.0" layoutY="187.0" mnemonicParsing="false" onAction="#newComment" prefHeight="26.0" prefWidth="62.0" text="Enter" />
+      <Button layoutX="541.0" layoutY="187.0" mnemonicParsing="false" onAction="#newReply" text="Reply" />
+      <ListView fx:id="forumList" layoutX="21.0" layoutY="35.0" onMouseClicked="#selectForum" prefHeight="303.0" prefWidth="200.0" />
+      <Button layoutX="535.0" layoutY="360.0" mnemonicParsing="false" onAction="#returnClick" text="Back" />
+      <Button layoutX="495.0" layoutY="187.0" mnemonicParsing="false" onAction="#editComment" prefHeight="26.0" prefWidth="46.0" text="Edit" />
+   </children>
+</AnchorPane>
